@@ -68,7 +68,10 @@ const Home = ({ navigation }) => {
 									>
 										First name
 									</Text>
-									<Text
+									<TextInput
+                    onChangeText={() => {}}
+                    placeholder='First name'
+                    keyboardType='default'
 										style={{
 											justifyContent: 'center',
 											alignContent: 'center',
@@ -83,7 +86,7 @@ const Home = ({ navigation }) => {
 										}}
 									>
 										Anish
-									</Text>
+									</TextInput>
 								</View>
 
 								<View
@@ -103,7 +106,10 @@ const Home = ({ navigation }) => {
 									>
 										Last name
 									</Text>
-									<Text
+									<TextInput
+                      onChangeText={() => {}}
+                      placeholder='Last name'
+                      keyboardType='default'
 										style={{
 											justifyContent: 'center',
 											alignContent: 'center',
@@ -118,7 +124,7 @@ const Home = ({ navigation }) => {
 										}}
 									>
 										Prasad
-									</Text>
+									</TextInput>
 								</View>
 
 								<View
@@ -138,7 +144,10 @@ const Home = ({ navigation }) => {
 									>
 										E-Mail
 									</Text>
-									<Text
+									<TextInput
+                    onChangeText={() => {}}
+                    placeholder='E-Mail'
+                    keyboardType='email-address'
 										style={{
 											justifyContent: 'center',
 											alignContent: 'center',
@@ -153,7 +162,7 @@ const Home = ({ navigation }) => {
 										}}
 									>
 										anish.m.prasad@gmail.com
-									</Text>
+									</TextInput>
 								</View>
 
 								<View

@@ -20,7 +20,10 @@
     "react-router-native": "5.2.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.19.3"
+    "@babel/core": "^7.19.3",
+      "cz-conventional-changelog": "^3.1.0",
+      "husky": "^4.2.3",
+      "prettier": "^2.1.1"
   },
   "scripts": {
     "start": "expo start",
@@ -29,6 +32,18 @@
     "web": "expo start --web",
     "format": "prettier --write 'src/**/*.{js,jsx,scss,css,json}'"
   },
+  
+  "husky": {
+		"hooks": {
+			"prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
+			"pre-commit": "npm run isready"
+		}
+	},
+  "config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	},
   "version": "1.0.0",
   "private": true,
   "name": "finshots"
