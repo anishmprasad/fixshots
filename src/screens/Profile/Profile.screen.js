@@ -55,7 +55,8 @@ const Home = ({ navigation }) => {
                     position: 'absolute',
                     zIndex: 1,
                     backgroundColor: '#fff',
-                    left : 10
+                    left : 10,
+                    fontSize : 12,
                   }}
                 >First name</Text>
                 <Text style={{
@@ -85,7 +86,8 @@ const Home = ({ navigation }) => {
                     position: 'absolute',
                     zIndex: 1,
                     backgroundColor: '#fff',
-                    left : 10
+                    left : 10,
+                    fontSize : 12,
                   }}
                 >Last name</Text>
                 <Text style={{
@@ -115,7 +117,8 @@ const Home = ({ navigation }) => {
                     position: 'absolute',
                     zIndex: 1,
                     backgroundColor: '#fff',
-                    left : 10
+                    left : 10,
+                    fontSize : 12
                   }}
                 >E-Mail</Text>
                 <Text style={{
@@ -144,7 +147,8 @@ const Home = ({ navigation }) => {
                     position: 'absolute',
                     zIndex: 1,
                     backgroundColor: '#fff',
-                    left : 10
+                    left : 10,
+                    fontSize : 12
                   }}
                 >Phone number</Text>
                 <Text style={{

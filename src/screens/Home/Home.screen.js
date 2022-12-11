@@ -15,6 +15,9 @@ import Icon from 'react-native-vector-icons/Ionicons'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchUser, selectAll } from '../../../src/stores/user.reducer'
 import content from './content'
+import bookmarkfill from '../../assets/bookmark/fill.png'
+import bookmarknonfill from '../../assets/bookmark/nonfill.png'
+
 
 
 const Home = ({ navigation }) => {
@@ -68,7 +71,7 @@ const Home = ({ navigation }) => {
   }, []);
 
   const [refreshing, setRefreshing] = React.useState(false);
-
+  const [bookmark , setBookmark] = React.useState(false)
   function Content(){
     return (
       <ScrollView
@@ -137,16 +140,48 @@ const Home = ({ navigation }) => {
                   >
                     {content.description}
                   </Text>
-                  <Text
-                    style={{
-                      flex:1,
-                      fontSize: 10,
-                      // paddingRight: 10,
-                      padding: 10,
-                    }} 
-                  >
-                    {epochConvertor(content.timestamp)}
-                  </Text>
+                  <View style={{
+                    //  width : 20,
+                    //  height : 20,
+                    //  backgroundColor : 'red',
+                     flexDirection : 'row',
+                     flex : 1,
+                     padding: 10,
+                     backgroundColor: 'red',
+                     alignContent : 'center',
+                     justifyContent : 'center',
+
+
+                    //  flexWrap : 'wrap'
+                  }}>
+                    <Text
+                      style={{
+                        flex:1,
+                        fontSize: 10,
+                        // paddingRight: 10,
+                      }} 
+                    >
+                      {epochConvertor(content.timestamp)}
+                    </Text>
+                    <TouchableOpacity
+                        onPress={ () => setBookmark(!bookmark) } 
+                    >
+                      <Image 
+                        source={bookmark ? bookmarkfill : bookmarknonfill}
+                        style={{
+                          width : 20,
+                          height : 20,
+                          // backgroundColor: 'red',
+                        }}
+                        // source={{
+                        //   url : bookmarkfill,
+                        //   width : 20,
+                        //   height : 20
+                        // }} 
+                      />
+                    </TouchableOpacity>
+                    
+                  </View>
                </View>
             )
           })}
