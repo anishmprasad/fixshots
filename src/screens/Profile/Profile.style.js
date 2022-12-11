@@ -33,10 +33,10 @@ export default StyleSheet.create({
 		// paddingVertical: 30,
 		alignItems: 'center',
 		justifyContent: 'center',
-		borderWidth: 0.5,
-		borderColor: '#F0F0F0',
+		// borderWidth: 0.5,
+		// borderColor: '#F0F0F0',
 		marginBottom: 20,
-		borderRadius: 20,
+		// borderRadius: 20,
 	},
 
 	text: { fontSize: 18, color: '#808080', fontWeight: 'bold' },
