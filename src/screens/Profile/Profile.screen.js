@@ -69,9 +69,9 @@ const Home = ({ navigation }) => {
 										First name
 									</Text>
 									<TextInput
-                    onChangeText={() => {}}
-                    placeholder='First name'
-                    keyboardType='default'
+										onChangeText={() => {}}
+										placeholder='First name'
+										keyboardType='default'
 										style={{
 											justifyContent: 'center',
 											alignContent: 'center',
@@ -107,9 +107,9 @@ const Home = ({ navigation }) => {
 										Last name
 									</Text>
 									<TextInput
-                      onChangeText={() => {}}
-                      placeholder='Last name'
-                      keyboardType='default'
+										onChangeText={() => {}}
+										placeholder='Last name'
+										keyboardType='default'
 										style={{
 											justifyContent: 'center',
 											alignContent: 'center',
@@ -145,9 +145,9 @@ const Home = ({ navigation }) => {
 										E-Mail
 									</Text>
 									<TextInput
-                    onChangeText={() => {}}
-                    placeholder='E-Mail'
-                    keyboardType='email-address'
+										onChangeText={() => {}}
+										placeholder='E-Mail'
+										keyboardType='email-address'
 										style={{
 											justifyContent: 'center',
 											alignContent: 'center',
