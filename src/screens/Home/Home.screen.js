@@ -144,7 +144,7 @@ const Home = ({ navigation }) => {
 									flexDirection: 'row',
 									flex: 1,
 									padding: 10,
-									backgroundColor: 'red',
+									// backgroundColor: 'red',
 									alignContent: 'center',
 									justifyContent: 'center',
 
