@@ -39,10 +39,12 @@ export default StyleSheet.create({
  
 
   thumbnail: {
-    width: 370,
+    width: 371,
     // width: '100%',
     height: 300,
     flex: 1,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius : 10,
     resizeMode: 'cover', // or 'stretch'
   },
   scrollView: {
