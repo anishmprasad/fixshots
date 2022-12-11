@@ -13,8 +13,8 @@ import Icon from 'react-native-vector-icons/Ionicons'
 
 const logo = {
   uri: 'https://reactnative.dev/img/tiny_logo.png',
-  width: 64,
-  height: 64,
+  width: 100,
+  height: 100, 
 };
 
 const Home = ({ navigation }) => {
@@ -37,20 +37,133 @@ const Home = ({ navigation }) => {
                 </Text>{' '}
                 screen
               </Text> */}
-              <Image source={logo} />
+              <Image 
+                source={logo} 
+                style={{
+                  borderRadius: 100 / 2
+                }}  
+              />
             </TouchableOpacity>
-            <Text style={{
-                justifyContent : 'center',
-                alignContent: 'center',
-                backgroundColor: '#ccc',
-                padding : 10,
-                marginTop : 10,
-                fontSize : 18
-                // flex:0
-              }}>
-                Anish M Prasad
-              </Text>
-              <Text style={{
+              <View
+                style={{
+                  position: 'relative',
+                  marginBottom : 30
+                }}
+              >
+                <Text
+                  style={{
+                    position: 'absolute',
+                    zIndex: 1,
+                    backgroundColor: '#fff',
+                    left : 10
+                  }}
+                >First name</Text>
+                <Text style={{
+                  justifyContent : 'center',
+                  alignContent: 'center',
+                  backgroundColor: '#fff',
+                  padding : 10,
+                  marginTop : 10,
+                  fontSize : 18,
+                  borderWidth: 1,
+                  borderColor: "#ccc",
+                  borderRadius : 10,
+                  // flex:0
+                }}>
+                  Anish
+                </Text>
+              </View>
+
+              <View
+                style={{
+                  position: 'relative',
+                  marginBottom : 30
+                }}
+              >
+                <Text
+                  style={{
+                    position: 'absolute',
+                    zIndex: 1,
+                    backgroundColor: '#fff',
+                    left : 10
+                  }}
+                >Last name</Text>
+                <Text style={{
+                  justifyContent : 'center',
+                  alignContent: 'center',
+                  backgroundColor: '#fff',
+                  padding : 10,
+                  marginTop : 10,
+                  fontSize : 18,
+                  borderWidth: 1,
+                  borderColor: "#ccc",
+                  borderRadius : 10,
+                  // flex:0
+                }}>
+                  Prasad
+                </Text>
+              </View>
+
+              <View
+                style={{
+                  position: 'relative',
+                  marginBottom : 30
+                }}
+              >
+                <Text
+                  style={{
+                    position: 'absolute',
+                    zIndex: 1,
+                    backgroundColor: '#fff',
+                    left : 10
+                  }}
+                >E-Mail</Text>
+                <Text style={{
+                  justifyContent : 'center',
+                  alignContent: 'center',
+                  backgroundColor: '#fff',
+                  padding : 10,
+                  marginTop : 10,
+                  fontSize : 18,
+                  borderWidth: 1,
+                  borderColor: "#ccc",
+                  borderRadius : 10,
+                  // flex:0
+                }}>
+                  anish.m.prasad@gmail.com
+                </Text>
+              </View>
+
+              <View
+                style={{
+                  position: 'relative'
+                }}
+              >
+                <Text
+                  style={{
+                    position: 'absolute',
+                    zIndex: 1,
+                    backgroundColor: '#fff',
+                    left : 10
+                  }}
+                >Phone number</Text>
+                <Text style={{
+                  justifyContent : 'center',
+                  alignContent: 'center',
+                  backgroundColor: '#fff',
+                  padding : 10,
+                  marginTop : 10,
+                  fontSize : 18,
+                  borderWidth: 1,
+                  borderColor: "#ccc",
+                  borderRadius : 10,
+                  // flex:0
+                }}>
+                  9633757400
+                </Text>
+              </View>
+              
+              {/* <Text style={{
                 justifyContent : 'center',
                 alignContent: 'center',
                 backgroundColor: '#ccc',
@@ -59,7 +172,7 @@ const Home = ({ navigation }) => {
                 fontSize : 18
               }}>
                 9633757400
-              </Text>
+              </Text> */}
           </View>
         </View>
         {/* <View

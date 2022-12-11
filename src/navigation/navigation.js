@@ -47,6 +47,11 @@ const MainNavigation = () => {
           options={{ headerShown: true }}
           component={MyTabs}
         />
+        {/* <Stack.Screen
+          name="Profile"
+          options={{ headerShown: true }}
+          component={Profile}
+        /> */}
         {/* add your another screen here using -> Stack.Screen */}
       </Stack.Navigator>
     </NavigationContainer>

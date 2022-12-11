@@ -23,8 +23,8 @@ export default StyleSheet.create({
     // alignItems: 'center',
     // justifyContent: 'center',
     backgroundColor: '#FFF',
-    marginTop : 80,
-    padding: 60
+    marginTop : 40,
+    padding: 40
   },
 
   buttonStyle: {
@@ -35,6 +35,8 @@ export default StyleSheet.create({
     justifyContent: 'center',
     borderWidth: 0.5,
     borderColor: '#F0F0F0',
+    marginBottom: 20,
+    borderRadius: 20
   },
 
   text: { fontSize: 18, color: '#808080', fontWeight: 'bold' },
